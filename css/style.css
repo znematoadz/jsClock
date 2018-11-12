@@ -1,5 +1,5 @@
 html {
-    background: rgb(164, 171, 175) url("https://images.unsplash.com/photo-1529917365646-d9b0d968d713?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3febbc1d354c425ed1098fb86fa6221f");
+    background: rgb(164, 171, 175) url("https://images.unsplash.com/photo-1529917365646-d9b0d968d713?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3febbc1d354c425ed1098fb86fa6221f") ;
     background-size: cover;
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
@@ -10,16 +10,17 @@ html {
     margin: 0;
     font-size: 2rem;
     display: flex;
-    
-    min-height: 100vh;
+    flex-flow: column;
+    height: 100vh;
     align-items: center;
   }
 
   .container {
-      display: flex row;
-      flex-wrap: wrap;
+    
+    
       margin: auto;
-      flex: 0 1 100px;
+      width: 100%;
+      height: auto;
   }
 
    
@@ -28,15 +29,23 @@ html {
     color: azure;
     background: rgba(145, 140, 140, 0.384);
     padding: 10px;
-    border-radius: 7px;
+    width: 40rem;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1em;
   }
 
-
+  .clockMain {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-left: 0px
+  }
 
   .clock {
     width: 40rem;
     height: 40rem;
-    border: 20px solid white;
+    border: 10px solid white;
     border-radius: 50%;
     margin: auto;
     position: relative;
@@ -92,5 +101,25 @@ html {
   .icon {
       font-size: 8rem;
       color: rgb(0, 0, 0);
+      margin: auto;
+      margin-top: 10px;
   }
 
+@media (max-width: 900px) {
+
+  body{
+    font-size: 1.3rem;
+  }
+  .icon{
+    font-size: 4rem;
+  }
+
+  .header h1,
+  .quote {
+    width: 20rem;
+  }
+  .clock {
+    width: 20rem;
+    height: 20rem;
+  }
+}
